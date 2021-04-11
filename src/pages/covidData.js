@@ -2,6 +2,7 @@ import React from 'react';
 import getLocations from '../components/getLocations';
 import getCovidData from '../components/getCovidData';
 import processDataResponse from '../components/covidDataComponent';
+import getLoader from '../components/loaderComponent';
 
 export default class Places extends React.Component{
   constructor(props){
@@ -21,11 +22,12 @@ export default class Places extends React.Component{
 
   render(){
     return(
-      <div>
-        <div className="row justify-content-center">
+      <div
+      >
+        <div className="row justify-content-center text-primary">
         <h1 className="my-3">Covid data for {this.props.location.userLocation}</h1>
         </div>
-        {this.state.covidDataComponent == null ? "Loading Data" : this.state.covidDataComponent}
+        {this.state.covidDataComponent == null ? getLoader() : this.state.covidDataComponent}
       </div>
     )
   }

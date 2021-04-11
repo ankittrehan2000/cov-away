@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import { ListGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import getLoader from "../components/loaderComponent";
 
 export default class Activities extends React.Component {
   constructor(props) {
@@ -78,7 +79,7 @@ export default class Activities extends React.Component {
         </div>
       </div>
     ) : (
-      <p>Loading...</p>
+      getLoader()
     );
   }
 }

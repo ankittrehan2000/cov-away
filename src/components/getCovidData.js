@@ -17,7 +17,7 @@ export default async function getCovidData(county) {
 
 function getCovidDataPromise(county, date) {
   const headers = {
-    "x-rapidapi-key": "2c63bad8bemshf13a3cc39570957p1a7dd1jsn9addf7958327",
+    "x-rapidapi-key": ,
     "x-rapidapi-host": "covid-19-statistics.p.rapidapi.com",
   };
 

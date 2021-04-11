@@ -7,17 +7,17 @@ export default function processDataResponse(paramsArray) {
   return (
     <div>
       {processedArray[1] && (
-        <h2 className="text-center">
+        <h2 className="text-center text-primary">
           There are very few cases new cases reported in this location
         </h2>
       )}
-      <h2 className="text-center">
+      <h2 className="text-center text-primary">
         The cases here seem to be{" "}
         {processedArray[2] ? "increasing" : "decreasing"} overall
       </h2>
-      <h4 className="text-center">Here are the latest covid statistics</h4>
+      <h4 className="text-center mx-2">Here are the latest covid statistics</h4>
       <div class="row justify-content-center">
-        <Table stripped border hover className="mx-5">
+        <Table stripped border hover className="mx-5 bg-dark text-light">
           <thead>
             <tr>
               <th>Date</th>
