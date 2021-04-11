@@ -3,6 +3,8 @@ Covaway loads real-time covid data using multiple third-party APIs for the past 
 
 It also shows a little shopping section where it recommends what you should get based on the covid data around you. Decreasing cases? Increasing cases? No cases? It has you covered with shopping recommendations
 
+App developed during Auburn Hacks
+
 Home:
 
 <img src="https://github.com/ankittrehan2000/cov-away/blob/main/screenshots/Screen%20Shot%202021-04-11%20at%2011.40.27%20AM.png" width="600" />
