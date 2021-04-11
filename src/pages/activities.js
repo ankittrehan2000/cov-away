@@ -26,7 +26,7 @@ export default class Activities extends React.Component {
   }
 
   getActivities(category, countyData) {
-    let url = `http://api.opentripmap.com/0.1/en/places/radius?radius=160934&lon=${countyData.region.long}&lat=${countyData.region.lat}&kinds=${category}&rate=3&apikey=5ae2e3f221c38a28845f05b671aada44a8f158ad99a9073e1ecf0874`;
+    let url = `http://api.opentripmap.com/0.1/en/places/radius?radius=160934&lon=${countyData.region.long}&lat=${countyData.region.lat}&kinds=${category}&rate=3&apikey=`;
     return axios.get(url).then((response) => response.data);
   }
 
